@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+      function fetchJobData(userId, url, callback) { var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(data) {
+          if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+              callback($.parseJSON(xhr.responseText));
+            } else {
+              callback(null);
+            }
+          }
+        }
+        xhr.open('GET', url + userId, true);
+        xhr.send();
+      };
+     /**
+       * Handles data sent via chrome.extension.sendRequest().
+       * @param request Object Data sent in the request.
+       * @param sender Object Origin of the request.
+       * @param callback Function The method to call when the request completes.
+       */
+      function onRequest(request, sender, callback) {
+        if (request.action == 'fetchJobData') {
+          fetchJobData(request.userId, 'https://improvement-ninjas.amazon.com/ChromeExt/jobdata/get_jobdata.cgi?login=', callback);
+        }
+      };
+
+      // Wire up the listener.
+      chrome.extension.onRequest.addListener(onRequest);
+    </script>
+  </body>
+</html>

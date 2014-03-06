@@ -1,0 +1,1 @@
+Signing key lives in Odin material set com.amazon.atribble.ChromeSigningKey - contact atribble@ if you need it.

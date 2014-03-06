@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "El Camelizer - Seguidor de precio Amazon",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Agrega gráficos de precios a Google Chrome y observa cómo cambian los precios del producto. Compatible con Amazón y Best Buy.",
+    "description": "The description of the application, displayed in the web store."
+  },
+  "pageActionTitle": {
+    "message": "El Camelizer",
+    "description": "Tool tip for the icon"
+  }
+}

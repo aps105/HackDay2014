@@ -1,0 +1,20 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [
+     {
+        "css": [  ],
+        "js": [ "jquery.js", "jobdata.js" ],
+        "matches": [ "https://connect.amazon.com/people/*" ]
+     },
+     {  
+        "css": [],
+        "js": [ "jquery.js", "orgdata.js" ],
+        "matches": [ "https://internal.amazon.com/phone/phone.mhtml*type=org*" ]
+     }
+   ],
+   "description": "Adds Job Level data to phone tool.",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDXo5xh05d6KMwuwYqx140RYlRKQO8rY1qrQXCzNqpNQTl8YfL0bgdgI7zY8Jt6lTpCckL2VnLqo+NxhW+ajhIdPUQv/V70t2+hyWFQybeAIIoN3wbFeEixkKVGO+ZUXaoJfR+4P34sZrxisXmfummALA07qrV6/f/Wnm+jxMxsjwIDAQAB",
+   "name": "Job Level Chrome Extension",
+   "permissions": [ "https://improvement-ninjas.amazon.com/ChromeExt/jobdata/*" ],
+   "version": "1.1"
+}

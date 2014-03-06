@@ -1,0 +1,16 @@
+{
+  "appName": {
+    "message": "Il Camelizer - Il seguiprezzo Amazon",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Aggiungi grafici di cronologia prezzo a Google Chrome e osserva le variazioni di prezzo dei prodotti. Compatibile con Amazon.",
+    "description": "The description of the application, displayed in the web store."
+  },
+  "pageActionTitle": {
+    "message": "Il Camelizer",
+    "description": "Tool tip for the icon"
+  }
+
+
+}
